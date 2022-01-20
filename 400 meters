@@ -1,0 +1,121 @@
+import random
+dice1 = 0
+dice2 = 0
+attempts = 0
+sum1 = 0
+sum2 = 0
+sum3 = 0
+sum4 = 0
+restart = 0
+while attempts < 9:
+    if attempts == 9:
+        print("too bad you used all 9 attempts")
+        break
+    else:
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        if dice1 != 6 and dice2 != 6:
+            total = dice1  + dice2
+        if dice1 == 6 and dice2 == 6:
+            total = 0
+        elif dice1 == 6:
+            total = dice2
+        elif dice2 == 6:
+            total = dice1
+        print(dice1 , dice2)
+        print("you rolled" , total)
+        restart = input("would you like to keep this total(y) or roll again?(n)")
+        if restart == "y" or restart == "Y":
+            sum1 == total
+            attempts = attempts + 1
+            break
+            attempts = attempts + 1
+        if restart == "n" or restart == "N":
+            attempts = attempts + 1
+print("so far you have" , total , "and have used" , attempts)
+total = 0
+while attempts < 9:
+    if attempts == 9:
+        print("too bad you used all 9 attempts")
+        break
+    else:
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        if dice1 != 6 and dice2 != 6:
+            total = dice1  + dice2
+        if dice1 == 6 and dice2 == 6:
+            total = 0
+        elif dice1 == 6:
+            total = dice2
+        elif dice2 == 6:
+            total = dice1
+        print(dice1 , dice2)
+        print("you rolled" , total)
+        restart = input("would you like to keep this total(y) or roll again?(n)")
+        if restart == "y" or restart == "Y":
+            sum2 == total
+            attempts = attempts + 1
+            break
+            attempts = attempts + 1
+        if restart == "n" or restart == "N":
+            attempts = attempts + 1
+print("so far you have" , total , "and have used" , attempts)
+total = 0
+while attempts < 9:
+    if attempts == 9:
+        print("too bad you used all 9 attempts")
+        break
+    else:
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        if dice1 != 6 and dice2 != 6:
+            total = dice1  + dice2
+        if dice1 == 6 and dice2 == 6:
+            total = 0
+        elif dice1 == 6:
+            total = dice2
+        elif dice2 == 6:
+            total = dice1
+        print(dice1 , dice2)
+        print("you rolled" , total)
+        restart = input("would you like to keep this total(y) or roll again?(n)")
+        if restart == "y" or restart == "Y":
+            sum3 == total
+            attempts = attempts + 1
+            break
+            attempts = attempts + 1
+        if restart == "n" or restart == "N":
+            attempts = attempts + 1
+print("so far you have" , total , "and have used" , attempts)
+total = 0
+while attempts < 9:
+    if attempts == 9:
+        print("too bad you used all 9 attempts")
+        break
+    else:
+        dice1 = random.randint(1, 6)
+        dice2 = random.randint(1, 6)
+        if dice1 != 6 and dice2 != 6:
+            total = dice1  + dice2
+        if dice1 == 6 and dice2 == 6:
+            total = 0
+        elif dice1 == 6:
+            total = dice2
+        elif dice2 == 6:
+            total = dice1
+        print(dice1 , dice2)
+        print("you rolled" , total)
+        restart = input("would you like to keep this total(y) or roll again?(n)")
+        if restart == "y" or restart == "Y":
+            sum4 == total
+            attempts = attempts + 1
+            break
+            attempts = attempts + 1
+        if restart == "n" or restart == "N":
+            attempts = attempts + 1
+print("so far you have" , total , "and have used" , attempts)
+total = 0
+final = sum1 + sum2 + sum3 + sum4
+print("YOU'RE FINAL SCORE IS...")
+print(final)
+print("YOU USED" , attempts , "ATTEMPTS")
